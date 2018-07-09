@@ -1,0 +1,199 @@
+/* html {
+    background: url(../images/bg.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    line-height: 1.5em;
+    box-sizing: border-box;
+  }
+  html,
+  body {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+  } */
+
+
+    #section0,
+	#section1,
+	{
+        background-size: cover; 
+    }
+
+    .logo  {
+        color: white;
+        position: relative; 
+        top: 15%;
+        /* left: -900px;  */
+        left: -46.5%;
+    }
+
+    #vest {
+        position: relative;
+        top: -363px;
+        left: 170px;
+        max-width: 348px;
+        z-index: 2;
+    }
+
+    #title  {
+        color: white;
+        position: relative; 
+        top: 17%;
+        /* left: -900px;  */
+        left: -44.2%;
+    }
+
+    .description  {
+        color: white;
+        position: relative; 
+        top: 180px;
+        /* left: -900px;  */
+        left: 8px;
+        width: 450px;
+        text-align: justify;
+
+    }
+
+    #vest-btn{
+        position: relative;
+        left: 130px;
+        top: -130px;
+    }
+
+    /* header{
+        color: white;
+        position: relative; 
+        top: 150px;
+        left: -720px; 
+        
+    } */
+
+     
+    #section0{
+        background-image: url(../images/intro.jpg);
+        /* background-image: url(../images/bg.jpg); */
+        background-repeat: no-repeat;
+        background-size: cover;
+		
+    }
+
+    #section1{
+        background-image: url(../images/one.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+    }
+    
+    #section2{
+        background-image: url(../images/two.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+    }
+    
+    #section3{
+        background-image: url(../images/one.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+    }
+    
+    #section4{
+        background-image: url(../images/two.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+    }
+
+    .section{
+        text-align:center;
+    }
+    #menu li {
+        display:inline-block;
+        margin: 10px;
+        color: #000;
+        background:#fff;
+        background: rgba(255,255,255, 0.5);
+        -webkit-border-radius: 10px;
+                border-radius: 10px;
+    }
+    #menu li.active{
+        background:#666;
+        background: rgba(0,0,0, 0.5);
+        color: #fff;
+    }
+    #menu li a{
+        text-decoration:none;
+        color: #000;
+    }
+    #menu li.active a:hover{
+        color: #000;
+    }
+    #menu li:hover{
+        background: rgba(255,255,255, 0.8);
+    }
+    #menu li a,
+    #menu li.active a{
+        padding: 9px 18px;
+        display:block;
+    }
+    #menu li.active a{
+        color: #fff;
+    }
+    #menu{
+        position:fixed;
+        top:0;
+        left:0;
+        height: 40px;
+        z-index: 70;
+        width: 100%;
+        padding: 0;
+        margin:0;
+    }
+
+    h2 {
+        font-size: 2.25em;
+        line-height: 1.25em;
+        letter-spacing: -0.05em;
+        font-weight: 900;
+        color: white;
+        display:inline-block;
+    }
+
+
+    .john {
+        position: absolute;
+        max-width: 348px;
+        margin: 0 auto;
+        top: 8%;
+        left: 50%;
+      }
+      .john > img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        max-height: 90vh;
+        z-index: 1;
+      }
+
+      #title {
+          color: white;
+          font-weight: 300px;
+      }
+    
+
+    
+    .rightside {
+      width: 500px;
+      height: 100%;
+      background: rgba(9, 107, 182, 0.5);
+      position: absolute;
+      top: 0;
+      right: -50px;
+      transition: all 0.3s ease;
+      color: #fff;
+      z-index: 999;
+    }
+   
