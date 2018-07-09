@@ -186,12 +186,12 @@
 
     
     .rightside {
-      width: 500px;
+      width: 600px;
       height: 100%;
       background: rgba(9, 107, 182, 0.5);
       position: absolute;
       top: 0;
-      right: -50px;
+      right: -10px;
       transition: all 0.3s ease;
       color: #fff;
       z-index: 999;
