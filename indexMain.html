@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Digital Experience Hub</title>
+    <meta name="author" content="Alvaro Trigo Lopez" />
+    <meta name="description" content="fullPage full-screen backgrounds." />
+    <meta name="keywords" content="fullpage,jquery,demo,screen,fullscreen,backgrounds,full-screen" />
+    <meta name="Resource-type" content="Document" />
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="../WearableRefresh/assets/css/fullpage.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="../WearableRefresh/assets/css/stylesMain.css" /> -->
+    <link rel="stylesheet" type="text/css" href="../WearableRefresh/assets/css/materialize.min.css" />
+    <link rel="stylesheet" type="text/css" href="../WearableRefresh/assets/css/stylesMain.css" />
+    <link rel="stylesheet" type="text/css" href="../WearableRefresh/assets/css/animate.css" />
+
+    <style>
+        /* Style for our header texts
+	* --------------------------------------- */
+
+        h1 {
+            font-size: 5em;
+            font-family: arial, helvetica;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Centered texts in each section
+	* --------------------------------------- */
+
+        .section {
+            /* text-align:center; */
+        }
+
+
+        /* Backgrounds will cover all the section
+	* --------------------------------------- */
+
+        .section {
+            background-size: cover;
+        }
+
+
+        /* Defining each section background and styles
+	* --------------------------------------- */
+
+        #section0 {
+            background-image: url(../WearableRefresh/assets/images/intro.jpg);
+        }
+
+        #section0 h1 {
+            top: 50%;
+            transform: translateY(-50%);
+            position: relative;
+        }
+
+        #section1 {
+            background-image: url(../WearableRefresh/assets/images/one.jpg);
+            padding: 6% 0 0 0;
+        }
+
+        #section2 {
+            background-image: url(../WearableRefresh/assets/images/two.jpg);
+            padding: 6% 0 0 0;
+        }
+
+        #section3 {
+            background-image: url(../WearableRefresh/assets/images/one.jpg);
+            padding: 6% 0 0 0;
+        }
+
+        #section4 {
+            background-image: url(../WearableRefresh/assets/images/two.jpg);
+            padding: 6% 0 0 0;
+        }
+
+
+        #menu li {
+            display: inline-block;
+            margin: 10px;
+            color: #000;
+            background: #fff;
+            background: rgba(255, 255, 255, 0.5);
+            -webkit-border-radius: 10px;
+            border-radius: 10px;
+        }
+
+        #menu li.active {
+            background: #666;
+            background: rgba(0, 0, 0, 0.5);
+            color: #fff;
+        }
+
+        #menu li a {
+            text-decoration: none;
+            color: #000;
+        }
+
+        #menu li.active a:hover {
+            color: #000;
+        }
+
+        #menu li:hover {
+            background: rgba(255, 255, 255, 0.8);
+        }
+
+        #menu li a,
+        #menu li.active a {
+            padding: 9px 18px;
+            display: block;
+        }
+
+        #menu li.active a {
+            color: #fff;
+        }
+
+        #menu {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 40px;
+            z-index: 70;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+
+    <!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+</head>
+
+<body>
+
+    <ul id="menu">
+        <li data-menuanchor="firstPage">
+            <a href="#firstPage">Home</a>
+        </li>
+        <li data-menuanchor="secondPage">
+            <a href="#secondPage">Emerging Technologies</a>
+        </li>
+        <li data-menuanchor="3rdPage">
+            <a href="#3rdPage">Product Maps</a>
+        </li>
+        <li data-menuanchor="4thPage">
+            <a href="#4thPage">Proof of Concepts</a>
+        </li>
+        <li data-menuanchor="5thPage">
+            <a href="#5thPage">Position Papers</a>
+        </li>
+    </ul>
+
+
+    <div id="fullpage">
+        <div class="section" id="section0">
+            <div id="logo">
+                <img src="../WearableRefresh/assets/images/bhplogo_white.png" alt="">
+            </div>
+            <div id="title">ENABLING OUR WORKFORCE</div>
+
+            <description class="description">
+                <div>We live in a constantly connected, data-driven world. We have increasingly high expectations of technology
+                    and we expect a continuous stream of data, instant updates, and solutions that respond intuitively to
+                    our needs.</div>
+                <p></p>
+                <div>The BHP Technology team is relentlessly focused on improving the digital experience of our workforce, providing
+                    the right tools to enable our workforce to be safer and more productive.</div>
+                <p></p>
+                <div>As technology evolves, we will be at the forefront of moving from a digital experience to an ambient human
+                    experience within which our workforce has an unparalleled relationship with the connected world.</div>
+                <blockquote>Mike Henry, Head of Digital Experience</blockquote>
+            </description>
+
+            <div class="john">
+                <img id="john" src="../WearableRefresh/assets/images/base.png" alt="">
+                <a class="btn-floating btn-large pulse blue" id="headBtn"></a>
+                <a class="btn-floating btn-large pulse blue" id="bodyBtn"></a>
+                <a class="btn-floating btn-large pulse blue" id="handBtn"></a>
+                <a class="btn-floating btn-large pulse blue" id="wristBtn"></a>
+                <a class="btn-floating btn-large pulse blue" id="waistBtn"></a>
+                <!-- <a class="btn-floating btn-large pulse blue" id="vestBtn"></a> -->
+            </div>
+            <div id="rightside">
+                <i class=" medium material-icons" id="close"></i>
+                <div class="header">
+                    <t1 class="categoryTitle"></t1>
+                    <br>
+                    <t3 class="categoryCount"></t3>
+                </div>
+
+                <div class="content">
+                    <div class="content-slider">
+                        <div class="slide">
+                            <ul class="device-list">
+
+                            </ul>
+                            <div class="device-desc " style="height: 100%;">
+                                    
+                            </div>
+
+                        </div>
+                       
+                    </div>
+                </div>
+
+
+
+            </div>
+
+        </div>
+        <div class="section" id="section1">
+            <h1>Emerging Tech</h1>
+        </div>
+        <div class="section" id="section2">
+            <h1>Product Maps</h1>
+        </div>
+        <div class="section" id="section3">
+            <h1>Proof of Concepts</h1>
+        </div>
+        <div class="section" id="section4">
+            <h1>Position Papers</h1>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="../WearableRefresh/assets/javascript/fullpage.js"></script>
+
+
+    <!-- <script type="text/javascript" src="examples.js"></script> -->
+
+    <script type="text/javascript">
+        var myFullpage = new fullpage('#fullpage', {
+            verticalCentered: false,
+            anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage', '5thPage'],
+            menu: '#menu',
+            //    continuousVertical: true,
+        });
+    </script>
+    <script type="text/javascript" src="../WearableRefresh/assets/javascript/jquery-3.3.1.min.js"></script>
+    <script src="../WearableRefresh/assets/javascript/papaparse.min.js"></script>
+    <script src="../WearableRefresh/assets/javascript/taffy-min.js"></script>
+    <script type="text/javascript" src="../WearableRefresh/assets/javascript/appMain.js"></script>
+
+
+</body>
+
+</html>

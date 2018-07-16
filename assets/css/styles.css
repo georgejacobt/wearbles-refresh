@@ -14,11 +14,62 @@
     height: 100%;
   } */
 
+  /* Reset CSS
+ * --------------------------------------- */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
+form,fieldset,input,textarea,p,blockquote,th,td {
+    padding: 0;
+    margin: 0;
+}
+a{
+	text-decoration:none;
+}
+table {
+    border-spacing: 0;
+}
+fieldset,img {
+    border: 0;
+}
+address,caption,cite,code,dfn,em,strong,th,var {
+    font-weight: normal;
+    font-style: normal;
+}
+strong{
+	font-weight: bold;
+}
+ol,ul {
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+caption,th {
+    text-align: left;
+
+}
+h1,h2,h3,h4,h5,h6 {
+    font-weight: normal;
+    font-size: 100%;
+    margin:0;
+    padding:0;
+    color:#444;
+}
+q:before,q:after {
+    content:'';
+}
+abbr,acronym { border: 0;
+}
+
+  /* Custom CSS
+ * --------------------------------------- */
 
     #section0,
-	#section1,
+    #section1,
+    #section2,
+    #section3,
+    #section4
 	{
         background-size: cover; 
+        height: 100%;
     }
 
     .logo  {
@@ -73,9 +124,9 @@
      
     #section0{
         background-image: url(../images/intro.jpg);
-        /* background-image: url(../images/bg.jpg); */
         background-repeat: no-repeat;
         background-size: cover;
+      
 		
     }
 
@@ -83,6 +134,7 @@
         background-image: url(../images/one.jpg);
         background-repeat: no-repeat;
         background-size: cover;
+      
         
     }
     
@@ -91,6 +143,7 @@
         background-repeat: no-repeat;
         background-size: cover;
         
+        
     }
     
     #section3{
@@ -98,12 +151,14 @@
         background-repeat: no-repeat;
         background-size: cover;
         
+        
     }
     
     #section4{
         background-image: url(../images/two.jpg);
         background-repeat: no-repeat;
         background-size: cover;
+      
         
     }
 
@@ -186,7 +241,7 @@
 
     
     .rightside {
-      width: 600px;
+      width: 500px;
       height: 100%;
       background: rgba(9, 107, 182, 0.5);
       position: absolute;

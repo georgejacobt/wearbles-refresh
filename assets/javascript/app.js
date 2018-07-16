@@ -1,25 +1,26 @@
-var myFullpage = new fullpage('#fullpage', {
-    verticalCentered: false,
+// var myFullpage = new fullpage('#fullpage', {
+//     verticalCentered: false,
 
-    anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage', '5thPage'],
-    menu: '#menu',
-    continuousVertical: true,
-    afterLoad: function(anchorLink, index){
-          console.log("AFTER LOAD - anchorLink:" +anchorLink + " index:" +index );
-      },
-      onLeave: function(index, nextIndex, direction){
-          console.log("ONLEAVE - index:" +index + " nextIndex:" +nextIndex  + " direction:" + direction);
+//     anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage', '5thPage'],
+//     menu: '#menu',
+//     continuousVertical: true,
+//     afterLoad: function(anchorLink, index){
+//           console.log("AFTER LOAD - anchorLink:" +anchorLink + " index:" +index );
+//       },
+//       onLeave: function(index, nextIndex, direction){
+//           console.log("ONLEAVE - index:" +index + " nextIndex:" +nextIndex  + " direction:" + direction);
 
-      },
+//       },
 
-    //to avoid problems with css3 transforms and fixed elements in Chrome, as detailed here: https://github.com/alvarotrigo/fullPage.js/issues/208
-    css3:false
-});
+//     //to avoid problems with css3 transforms and fixed elements in Chrome, as detailed here: https://github.com/alvarotrigo/fullPage.js/issues/208
+//     css3:false
+// });
 
 let bodyPart = "";
 let description = "";
 $(document).ready(function(){
-    $('.scrollspy').scrollSpy();
+
+  
   var dataPath = "../WearableRefresh/assets/data/bhpEquipment1.csv";
         Papa.parse(dataPath, {
             download: true,
@@ -50,9 +51,13 @@ $(document).ready(function(){
         $("#bodyPart").text(bodyPart);
         $("#description").text(description);
 
+    })
 
-        
-      
+    $("#john1").on("click",function(){
+
+        alert("here");
+     
+
     })
   });
 
