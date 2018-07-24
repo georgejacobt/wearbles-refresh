@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="../WearableRefresh/assets/css/fullpage.css" />
+    <link rel="stylesheet" type="text/css" href="../WearableRefresh/assets/css/tipr.css" />
     <!-- <link rel="stylesheet" type="text/css" href="../WearableRefresh/assets/css/stylesMain.css" /> -->
     <link rel="stylesheet" type="text/css" href="../WearableRefresh/assets/css/materialize.min.css" />
     <link rel="stylesheet" type="text/css" href="../WearableRefresh/assets/css/stylesMain.css" />
@@ -49,7 +50,8 @@
 	* --------------------------------------- */
 
         #section0 {
-            background-image: url(../WearableRefresh/assets/images/intro.jpg);
+            /* background-image: url(../WearableRefresh/assets/images/two.jpg); */
+            background: #212529;
         }
 
         #section0 h1 {
@@ -147,7 +149,7 @@
             <a href="#secondPage">Emerging Technologies</a>
         </li>
         <li data-menuanchor="3rdPage">
-            <a href="#3rdPage">Product Maps</a>
+            <a href="#3rdPage">Road Map</a>
         </li>
         <li data-menuanchor="4thPage">
             <a href="#4thPage">Proof of Concepts</a>
@@ -180,11 +182,11 @@
 
             <div class="john">
                 <img id="john" src="../WearableRefresh/assets/images/base.png" alt="">
-                <a class="btn-floating btn-large pulse blue" id="headBtn"></a>
-                <a class="btn-floating btn-large pulse blue" id="bodyBtn"></a>
-                <a class="btn-floating btn-large pulse blue" id="handBtn"></a>
-                <a class="btn-floating btn-large pulse blue" id="wristBtn"></a>
-                <a class="btn-floating btn-large pulse blue" id="waistBtn"></a>
+                <a class="btn-floating btn-large pulse blue tooltipped johntooltip" data-position="right" data-tooltip="this is tooltip" data-source="headArray" data-title="Head Gear" data-count="headArrayLength" data-icon="head" id="headBtn"></a>
+                <a class="btn-floating btn-large pulse blue tooltipped johntooltip" data-position="right" data-tooltip="this is tooltip" data-source="bodyArray" data-title="Wearable" data-count="bodyArrayLength" data-icon="body" id="bodyBtn"></a>
+                <a class="btn-floating btn-large pulse blue tooltipped johntooltip" data-position="right" data-tooltip="this is tooltip" data-source="handArray" data-title="Hand Gear" data-count="handArrayLength" data-icon="hand"  id="handBtn"></a>
+                <a class="btn-floating btn-large pulse blue tooltipped johntooltip" data-position="right" data-tooltip="this is tooltip" data-source="wristArray" data-title="Wrist Gear" data-count="wristArrayLength" data-icon="wrist"  id="wristBtn"></a>
+                <a class="btn-floating btn-large pulse blue tooltipped johntooltip" data-position="right" data-tooltip="this is tooltip" data-source="waistArray" data-title="Waist Gear" data-count="waistArrayLength" data-icon="waist" id="waistBtn"></a>
                 <!-- <a class="btn-floating btn-large pulse blue" id="vestBtn"></a> -->
             </div>
             <div id="rightside">
@@ -192,7 +194,8 @@
                 <div class="header">
                     <t1 class="categoryTitle"></t1>
                     <br>
-                    <t3 class="categoryCount"></t3>
+                    <!-- <t3 class="categoryCount"></t3> -->
+                    <t3><span class="categoryCount">2</span> Available Devices </t3>
                 </div>
 
                 <div class="content">
@@ -216,10 +219,218 @@
 
         </div>
         <div class="section" id="section1">
-            <h1>Emerging Tech</h1>
+
+            <div class="container">
+
+                    <div class="row" id="row1">
+                            
+                            <div class="col s4">
+                                <div class="card zoom">
+                                    <div class="card-image modal-trigger" href="#modal1">
+                                        <img src="../WearableRefresh/assets/images/cards/card-hero.jpg">
+                                        <span class="card-title">Personalization Engine</span>
+                                    </div>
+                                    <div class="card-content">
+                                        <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require
+                                            little markup to use effectively.</p>
+                                    </div>
+                                    <div class="card-action">
+                                        <a href="#">Read More..</a>
+                                    </div>
+                                </div>
+                            
+                                <!-- Modal Structure -->
+                                <div id="modal1" class="modal modal-fixed-footer">
+                                    <div class="modal-content modalP">
+                                        <h4>Personalization Engine</h4>
+                                        <!-- Lorem Ipsum Start-->
+                                        <p>
+                                                Lorem ipsum dolor sit amet, nonumy interesset mediocritatem quo ne. Vix an eruditi vocibus splendide. Eu vis vidit soluta, qui ex odio minim. No mei sint eruditi, vel et iudico libris aliquid, an iuvaret moderatius eum.
+
+                                                No pri oblique deseruisse scriptorem, vis salutandi erroribus ut, no voluptua epicurei sea. Ea populo mollis voluptaria sea, eu detraxit legendos sententiae cum, id dicta pericula per. Aeque sensibus nam at. Eam ad splendide vituperata temporibus, vituperata neglegentur liberavisse vix ex. Mea labores appetere placerat et. Vix duis lorem solet id.
+                                                
+                                                Vis no labitur officiis dissentiunt, disputationi reprehendunt vel ex His invenire mediocrem id, alia ridens torquatos ea sea. Aeque dicit everti vix id. Dolorem accusata intellegebat his ut, harum veritus id eam. Saepe accusam in vel.
+                                                
+                                                Mea ex vidit summo phaedrum, soluta detraxit pro ad, cu has utamur volutpat. Phaedrum dissentias vim no, mutat omittam appellantur eum ea. Fugit utinam eam no, eius instructior nam no, usu ut impedit appareat adolescens. Vel ad sanctus invenire. Dolorum docendi mei et, ipsum clita splendide usu ut, quo in choro nostrum.
+                                                
+                                                Eam temporibus efficiantur ad, mea omnes verear eruditi no. Euismod ponderum his ea. No mel nullam eloquentiam, novum aperiri vel ei. Ius summo maluisset neglegentur id. Meis menandri ut vel. Eu dolor nostrum qui.
+                                                
+                                                No eam rebum tantas sensibus, vocibus scriptorem adversarium duo at. Vis te sale docendi adipiscing, ei qui fabellas constituam. In sed verterem facilisi platonem, veri accusamus incorrupte in pro. Ex sit quando dissentias, cum fastidii perfecto splendide ei.
+                                                
+                                                Ut mea mucius partiendo omittantur, habeo corrumpit nam ad. Ut idque commune pri, at sit verterem abhorreant. Cum ut clita appareat deserunt, eam melius malorum ut, nec virtute fierent ei. Mutat consetetur duo id.
+                                                
+                                                Ex ius congue iisque tamquam, stet civibus suscipiantur eos cu. Pri habeo vocent eu. Ad ius modo mazim invidunt. Idque fuisset ut nam, mel in omittam invidunt menandri.
+                                                
+                                                Aliquip prodesset ad usu. Unum nulla no vel. Sit nonumes moderatius eu, oratio numquam appellantur sea an, vix facilis molestie intellegat ex. Cu dicat nominavi his, in putant constituto contentiones sea.
+                                                
+                                                Nullam tritani scribentur at duo, pri graecis iracundia in. Alii persius alterum eos an. Ad mediocrem voluptatum per. Idque percipitur cu nam, ad pericula persecuti sit. Cibo convenire imperdiet pri ei, duo apeirian facilisis et. Liber erroribus argumentum cu ius, in quo melius scripta.
+                                                
+                                                Volumus prodesset necessitatibus vix eu. Mel noster placerat eu, no nec nobis delenit. Enim vero feugait vis ad. Ex mandamus ocurreret pri, nihil saperet ut cum, pri eros malis admodum at. Id stet expetendis vim. Usu nisl patrioque interesset et, nominavi urbanitas ius te.
+                                                
+                                                Ut duo habeo ullum, nam quis modo an. Vix in convenire disputando, sea persecuti dissentias ut. Te hinc probo animal mea. Ut dolore quidam suscipit sit, pri dolor pertinacia et, vim ut ludus scaevola. Volutpat democritum definiebas ei vim, has at veri prompta. At latine dolores sit.
+                                                
+                                                Pro ei magna aliquid molestiae. Id fugit persecuti has, at latine alienum pertinax quo. Lucilius qualisque eos ut, doming ancillae iudicabit cu ius, est simul commune at. Solum audiam adversarium ex nec, ad vide falli eam, suavitate hendrerit et mea. Nam prima recteque ne.
+                                                
+                                                Erant clita volumus ut sit, eius quodsi sea ex. Eu tota quas vituperatoribus pro. Et congue intellegam per, et graeci molestie repudiare eos. Deserunt praesent vituperata pro ea, falli expetendis at mel, has ei dolor molestie conclusionemque. Qui an possim sanctus consequuntur, an accusata gloriatur vel.
+                                                
+                                                Mei laudem tamquam at, eos an omnis definitiones, dicat putent consulatu vim at. Quidam salutandi efficiantur nec ei, cu pro choro facilis. Dicat oblique et sed, ad expetendis neglegentur nec. Vitae bonorum appellantur at qui, cu vidit utamur legimus vim, in vis congue intellegam. Novum impedit ceteros vim at, mel te veritus appellantur complectitur, nemore cotidieque at his. Eros vivendum adversarium eam ei, nam mollis reprehendunt ea.
+                                                
+                                                Stet unum posidonium eu vis, praesent prodesset suscipiantur ad vim, harum temporibus ex nec. Prompta prodesset cum ex, cu solet admodum mei. Qui no brute choro, partem nostrud vituperata eos ea. Usu et tantas postea, ne qui case movet causae.
+                                                
+                                                Vitae persecuti dissentias vis an, cu sed nisl scripta. Sensibus evertitur interpretaris ad quo, has dicam tantas no. At sit sint omnesque eleifend. Ne summo tantas nam, te elitr dicam molestiae his.
+                                                
+                                                Similique dissentiunt sea ex. Debet qualisque adversarium an vim, duo populo suscipit assentior ei. In sed autem postea signiferumque. Ad eam esse civibus dignissim, usu dictas mediocrem disputando te, eius doctus has at.
+                                                
+                                                Euripidis definitiones sed ea, cu vis veritus salutatus. Cum ad ipsum graecis philosophia. Duo tractatos tincidunt et. Vis diam tantas sanctus in, has ad putant nostrum noluisse. Alia quot ea eos. Cum ea partiendo iudicabit eloquentiam.
+                                                
+                                                Fabulas denique evertitur vix ea, an vix dicunt tibique vulputate. Eos in graeco omittam. An mel omnis necessitatibus, ut aliquam appareat concludaturque qui. Ex vim rebum vulputate signiferumque, qui in hendrerit voluptaria reprehendunt, an mea elit menandri pericula. Ea lobortis sensibus vim, ex nec fuisset corrumpit.
+                                                
+                                                Sit ex prompta percipit facilisis. No iuvaret mandamus usu. Quot labitur cum an, per ad vituperata scribentur, euripidis moderatius an eos. Cu reque convenire consequat eam, et postea omnium appellantur vis. Tritani tincidunt expetendis eu vis, eu nec labitur efficiendi comprehensam, propriae senserit ea nam. Mei sale magna habeo ad.
+                                                
+                                                At mediocrem pertinacia repudiandae sed, sea ne omnesque interpretaris, invenire maiestatis ut mel. Qui ad feugiat delenit phaedrum, duis omnes impedit cu duo, pri veri soluta omnesque et. Vix numquam mnesarchum ea, ei sed luptatum intellegat, ad mei sale veniam. Pri graeci singulis in. Eam semper accusam intellegebat ei.
+                                                
+                                                Vix tollit semper te. Amet civibus in pri. Fabellas intellegam definitionem ex eos, ut quaestio quaerendum nec. Tritani delectus cu eum, id primis vulputate sit. No alia sententiae consectetuer ius.
+                                                
+                                                Cu mea scripta sadipscing, idque audire propriae ei mel. Eam augue essent dolorum ut, ut odio cetero verterem has, vix et summo neglegentur. Nam veri prima mollis no, pri no omittam tractatos contentiones. Duo an nibh reque suscipit, nam probo adhuc consetetur an, et his iudico intellegat. No mea vitae epicuri antiopam, ei mel case tibique percipit.
+                                                
+                                                Duo ex oblique feugait. Adhuc homero deleniti has id, ex mea alterum commune dignissim. Eleifend adolescens est no, id eam adhuc recteque definiebas. Sumo homero eum ad, duo an malis mundi legendos, ex virtute scriptorem nam. Ad vim ridens verterem, usu amet aperiam et, at dicunt percipit mel. Mea ea voluptua ponderum adversarium, qui consetetur moderatius neglegentur ne.
+                                                
+                                                Augue tantas adipiscing cu vix. Ea habeo populo rationibus mea, ad pri cotidieque referrentur. Cu nam commune voluptaria, no iusto torquatos quo. Vix honestatis intellegebat ad, cu nam quot fabellas.
+                                                
+                                                His ad probo suscipiantur, justo ridens voluptaria pro cu. Ne nam omnium animal posidonium. Per dico fuisset ocurreret ex. An sea mundi essent aliquid, ad eos dolorum appareat. Quo altera appareat electram te, fastidii voluptua atomorum vel an, aeterno facilis ne sed.
+                                                
+                                                Duo te luptatum adipiscing, at minim legendos facilisis eum. Ex mei velit ancillae, in has nobis similique, dolorem mandamus his ei. Ea vide doming nec, has cu exerci imperdiet, pri option legimus sadipscing te. Hinc nominati ea has. Sea ex purto eleifend ocurreret. Unum scribentur eu usu, eos consul insolens imperdiet ex.
+                                                
+                                                Numquam invidunt tacimates in nec, id nec diam maiorum. Ius posse etiam causae te, cum ut alia vocent. An sensibus laboramus mel. Ea mei mutat nullam nostrud. Mei at dictas elaboraret.
+                                                
+                                                Omnium delicata pertinacia mel cu, ius scaevola persequeris in, et postulant persecuti argumentum eam. Eam ut semper singulis. Eum deseruisse consetetur cu. Id intellegebat disputationi eam, ridens iisque dolorem mel eu, sea ea inermis invidunt. Veniam everti disputationi ex sed, at mei illum ipsum dissentiunt. Et sed case ipsum everti.
+                                                
+                                                Ius et impetus repudiare. Te sale falli everti usu, eu falli quidam apeirian vis. Usu an liber qualisque, ad nec simul dolores detraxit. Pri ea fabellas sensibus. Homero commodo est no.
+                                                
+                                                Qui no eros vocibus, est justo mentitum ei, no magna appellantur sed. Vel at nullam probatus. Ea cibo tincidunt vel, ei est posse legendos. Te elit appareat patrioque sed. Ocurreret eloquentiam ut sed, ea mel eligendi democritum, vix te libris salutandi omittantur. Ius numquam delenit id, reque imperdiet vix ad.
+                                                
+                                                Qui in solet dolorum indoctum, dicunt singulis ne vix, cu pri amet homero. Nusquam fierent accumsan mel no. Ignota cetero ea duo, te per summo tamquam. An pro regione adolescens, id mea esse libris fierent. Possit virtute ea eos.
+                                                
+                                                Dicam dissentiunt sit in, sea laudem dolorum ad. At autem posidonium necessitatibus pri, quidam persecuti complectitur ut vix. Vix et delenit postulant assentior, quo atqui percipit cu. Zril lucilius intellegam sea te, aliquid saperet cu duo.
+                                                
+                                                Ex oportere adipiscing vel, assentior signiferumque eos eu. Audire incorrupte eu mei, equidem docendi has no. Eu nam mazim affert mediocritatem, dicit praesent vel et, habemus imperdiet definitionem et quo. At vix propriae assentior philosophia, cum discere nominati intellegebat te.
+                                                
+                                                Cu nonumes graecis duo. Cum no velit doctus, id altera equidem nec. Id nobis mollis duo, sea iriure feugiat necessitatibus ea, ei vel salutandi rationibus persequeris. Has no posse scripta democritum, aperiam nostrum accumsan eu nam. Has et probo legere noster.
+                                                
+                                                Fuisset praesent vituperata nam an, mei graeci doming scripserit ut, homero inciderint id eam. Sit an fugit appetere imperdiet, pri ut esse natum. Ad graece sensibus vix, in mazim iusto vim. No platonem maiestatis vix. Mel ignota latine dolores ex. Cum aliquip graecis nostrum ea, saepe habemus eu quo. His ex nonumy invenire inciderint.
+                                                
+                                                Pro eu tritani feugait interesset. Brute tibique vituperatoribus mei at, eum in simul vitae blandit. An omnis mutat nostrum pro. No eirmod invidunt vix, debet homero suavitate ne est. Ea mea ipsum eirmod alterum.
+                                                
+                                                Eos ne ferri aliquip, aeque delectus salutatus et mei. Ocurreret assentior his ad, ei vitae pericula evertitur vel. Ne dicat democritum nam. Eos ut posse placerat contentiones, augue verear nusquam sea ea. Vitae decore lucilius est ut, vis ludus percipitur voluptatibus at. Nec et eros vivendo, brute tincidunt eu sea, ius argumentum instructior.
+
+                                        </p>
+                                         <!-- Lorem Ipsum End-->
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+                                    </div>
+                                </div>
+                            
+                            
+                            </div>
+
+                            
+                            <div class="col s4">
+
+                                    <div class="card zoom">
+                                            <div class="card-image">
+                                              <img src="../WearableRefresh/assets/images/cards/card-hero.jpg">
+                                              <span class="card-title">Private Digital Assistant</span>
+                                            </div>
+                                            <div class="card-content">
+                                              <p>I am a very simple card. I am good at containing small bits of information.
+                                              I am convenient because I require little markup to use effectively.</p>
+                                            </div>
+                                            <div class="card-action">
+                                              <a href="#">Read More..</a>
+                                            </div>
+                                    </div>
+
+                            </div>
+                            <div class="col s4">
+
+                                    <div class="card zoom">
+                                            <div class="card-image">
+                                              <img src="../WearableRefresh/assets/images/cards/card-hero.jpg">
+                                              <span class="card-title">Digital Suite</span>
+                                            </div>
+                                            <div class="card-content">
+                                              <p>I am a very simple card. I am good at containing small bits of information.
+                                              I am convenient because I require little markup to use effectively.</p>
+                                            </div>
+                                            <div class="card-action">
+                                              <a href="#">Read More..</a>
+                                            </div>
+                                    </div>
+                                
+                            </div>
+                    </div>
+
+                    <div class="row" id="row2">
+
+                           <div class="col s2"></div>
+                            
+                            <div class="col s3">
+                                    <div class="card zoom">
+                                            <div class="card-image">
+                                              <img src="../WearableRefresh/assets/images/cards/emerging-hero.jpg">
+                                              <span class="card-title">Machine Learning</span>
+                                            </div>
+                                            <div class="card-content">
+                                              <p>I am a very simple card. I am good at containing small bits of information.
+                                              I am convenient because I require little markup to use effectively.</p>
+                                            </div>
+                                            <div class="card-action">
+                                              <a href="#">Read More..</a>
+                                            </div>
+                                    </div>
+
+                            </div>
+                            <div class="col s3">
+                                    <div class="card zoom">
+                                            <div class="card-image">
+                                              <img src="../WearableRefresh/assets/images/cards/emerging-hero.jpg">
+                                              <span class="card-title">HMD</span>
+                                            </div>
+                                            <div class="card-content">
+                                              <p>I am a very simple card. I am good at containing small bits of information.
+                                              I am convenient because I require little markup to use effectively.</p>
+                                            </div>
+                                            <div class="card-action">
+                                              <a href="#">Read More..</a>
+                                            </div>
+                                    </div>
+                            </div>
+                            <div class="col s3">
+                                    <div class="card zoom">
+                                            <div class="card-image">
+                                              <img src="../WearableRefresh/assets/images/cards/emerging-hero.jpg">
+                                              <span class="card-title">Next Gen </span>
+                                            </div>
+                                            <div class="card-content">
+                                              <p>I am a very simple card. I am good at containing small bits of information.
+                                              I am convenient because I require little markup to use effectively.</p>
+                                            </div>
+                                            <div class="card-action">
+                                              <a href="#">Read More..</a>
+                                            </div>
+                                    </div>
+                            </div>
+
+                            <div class="col s1"></div>
+                    </div>
+
+
+            </div>
+            
         </div>
         <div class="section" id="section2">
-            <h1>Product Maps</h1>
+            <h1>Road Map</h1>
         </div>
         <div class="section" id="section3">
             <h1>Proof of Concepts</h1>
@@ -239,12 +450,15 @@
             verticalCentered: false,
             anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage', '5thPage'],
             menu: '#menu',
-            //    continuousVertical: true,
+            normalScrollElements: '.rightside, .modalP',
+            // continuousVertical: true
         });
     </script>
     <script type="text/javascript" src="../WearableRefresh/assets/javascript/jquery-3.3.1.min.js"></script>
+    <script src="../WearableRefresh/assets/javascript/tipr.min.js"></script>
     <script src="../WearableRefresh/assets/javascript/papaparse.min.js"></script>
     <script src="../WearableRefresh/assets/javascript/taffy-min.js"></script>
+    <script src="../WearableRefresh/assets/javascript/materialize.min.js"></script>
     <script type="text/javascript" src="../WearableRefresh/assets/javascript/appMain.js"></script>
 
 

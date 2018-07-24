@@ -30,6 +30,7 @@ t1 { /*slide out header style*/
     padding: 0;
   }
 
+
 .john {
     position: absolute;
     max-width: 348px;
@@ -45,6 +46,36 @@ t1 { /*slide out header style*/
     z-index: 1;
   }
 
+.john > #headBtn, #bodyBtn, #handBtn, #wristBtn, #waistBtn{
+    position: absolute;
+    opacity: 0.6;
+   
+}
+
+  #headBtn{
+    left: 11vh;
+    top: 5vh;
+}
+
+#bodyBtn{
+    top: 19vh;
+    left: 5vh;
+}
+
+#handBtn{
+    top: 27vh;
+    left: 16vh;
+}
+
+#wristBtn{
+    top: 43vh;
+    left: 3vh;
+}
+
+#waistBtn{
+    top: 40vh;
+    left: 15vh;
+}
 
   .rightside {
     width: 500px;
@@ -52,10 +83,11 @@ t1 { /*slide out header style*/
     background: rgba(9, 107, 182, 0.5);
     position: absolute;
     top: 0;
-    right: -10px;
+    right: 0px;
     transition: all 0.3s ease;
     color: #fff;
     z-index: 999;
+    overflow: auto;
   }
 
   .rightside .header {
@@ -122,35 +154,7 @@ t1 { /*slide out header style*/
       
   }
 
-  #headBtn, #bodyBtn, #handBtn, #wristBtn, #waistBtn{
-    position: relative;
-    opacity: 0.6;
-   
-}
-
-  #headBtn{
-    left: 120px;
-    top: 60px;
-}
-
-#bodyBtn{
-    top: 200px;
-}
-
-#handBtn{
-    top: 270px;
-    left: 40px;
-}
-
-#wristBtn{
-    top: 420px;
-    left: -150px;
-}
-
-#waistBtn{
-    top: 380px;
-    right: 100px;
-}
+  
 
   .preview {
       float: left;
@@ -164,9 +168,6 @@ t1 { /*slide out header style*/
       font-size: x-large;
   }
 
-  
-
-
 
   #close {
   position: absolute;
@@ -178,3 +179,35 @@ t1 { /*slide out header style*/
   overflow: hidden;
   cursor: pointer;
   }
+
+  #row1 {
+    position: relative;
+    top: -40px;
+  
+  }
+
+  #row2 {
+    position: relative;
+    top: -50px;
+    /* left: 150px; */
+    right: 50px;
+  
+  }
+
+  .zoom {
+   
+    transition: transform .2s;
+ 
+}
+
+.zoom:hover {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.2); 
+    z-index: 30;
+    cursor: pointer;
+}
+
+
+
+ 
